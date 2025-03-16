@@ -29,6 +29,7 @@
   </div>
 </div>
 <style>
+  
   :root {
         --image-size: clamp(150px, 30vw, 400px);
     }
@@ -55,4 +56,4 @@
       flex-shrink: 0;
     }
   
-  </style>
+</style>

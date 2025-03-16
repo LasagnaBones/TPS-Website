@@ -1,5 +1,5 @@
 {
-	"name": "tps-website",
+	"name": "tps-website-app",
 	"version": "0.0.1",
 	"scripts": {
 		"dev": "vite dev",
@@ -54,8 +54,6 @@
 	},
 	"keywords": [
 		"svelte"
-	],
-	"dependencies": {
-		"tps-website": "file:"
-	}
+	]
+
 }
