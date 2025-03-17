@@ -63,7 +63,7 @@
 		justify-content: center;
 		align-content: center;
 		display: flex;
-		margin: 0 0;
+		margin: 0 auto;
 		background-color: rgba(78, 78, 78, 0.295);
 	}
 	nav {
