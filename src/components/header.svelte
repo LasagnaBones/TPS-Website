@@ -5,8 +5,8 @@
 		'linear-gradient(to right,#f07 40%, #c49 0 60%, #03a 0)', // Bisexual Pride
 		'linear-gradient(to right,#f09 33.33%, gold 0 66.66%, deepskyblue 0)', // Pansexual Pride
 		'linear-gradient(to right,black 25%, darkgray 0 50%, white 0 75%, #a50089 0);', // Asexual Pride
-		'linear-gradient(to right,red 0 14.28%, #ff7000 0 28.57%, #f93 0 42.85%, white 0 57.14%, #f5a 0 71.42%, #f49 0 85.71%, #e06 0)',// Lesbian
-		'linear-gradient(to right,#00916e 0 14.28%, #00d2a9 0 28.57%, #7debbe 0 42.85%, white 0 57.14%, #6eaee7 0 71.42%, #5443d3 0 85.71%, #43117d 0)',// Gay
+		'linear-gradient(to right,red 0 14.28%, #ff7000 0 28.57%, #f93 0 42.85%, white 0 57.14%, #f5a 0 71.42%, #f49 0 85.71%, #e06 0)', // Lesbian
+		'linear-gradient(to right,#00916e 0 14.28%, #00d2a9 0 28.57%, #7debbe 0 42.85%, white 0 57.14%, #6eaee7 0 71.42%, #5443d3 0 85.71%, #43117d 0)' // Gay
 	];
 
 	let currentFlag: string = prideFlags[0]; // Default flag (Rainbow)
@@ -19,25 +19,37 @@
 </script>
 
 <header>
-	<nav class="lexend-header">
+	<nav class="be-vietnam-pro-black">
 		<div class="logo">
 			<img src="/tps-logo.png" alt="" />
 			<h3>The Pride Society</h3>
 		</div>
-		<a class="nav-item" style="--flag: {currentFlag};" on:mouseenter={changeFlag} href="/"
+		<a class="nav-item outline" style="--flag: {currentFlag};" on:mouseenter={changeFlag} href="/"
 			>Home</a
 		>
-		<a class="nav-item" style="--flag: {currentFlag};" on:mouseenter={changeFlag} href="/About">About Us</a>
-		<a class="nav-item" style="--flag: {currentFlag};" on:mouseenter={changeFlag} href="/Contact">Contact Us</a>
-		<a class="nav-item" style="--flag: {currentFlag};" on:mouseenter={changeFlag} href="/Team">Team</a>
+		<a class="nav-item" style="--flag: {currentFlag};" on:mouseenter={changeFlag} href="/About"
+			>About Us</a
+		>
+		<a class="nav-item" style="--flag: {currentFlag};" on:mouseenter={changeFlag} href="/Contact"
+			>Contact Us</a
+		>
+		<a class="nav-item" style="--flag: {currentFlag};" on:mouseenter={changeFlag} href="/Team"
+			>Team</a
+		>
 	</nav>
 </header>
 
 <style lang="scss">
 	@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@900&display=swap');
 
 	//text defaults
 	$text-color: black;
+	.be-vietnam-pro-black {
+		font-family: 'Be Vietnam Pro', sans-serif;
+		font-weight: 900;
+		font-style: normal;
+	}
 
 	.lexend-header {
 		font-family: 'Lexend', sans-serif;
@@ -69,12 +81,13 @@
 		font-size: clamp(8px, 2vw, 64px);
 		color: $text-color;
 		display: inline-block;
-		transition: font-size .5s;
+		transition: font-size 0.5s;
+		-webkit-text-stroke: 1px white;
 
 		&:hover {
 			font-size: clamp(16px, 4vw, 72px);
 			background-clip: text;
-			background:var(--flag);
+			background: var(--flag);
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
 		}
@@ -92,6 +105,8 @@
 			height: 50px;
 			aspect-ratio: 1 / 1;
 		}
+	}
+	.outline {
 	}
 
 	@keyframes wiggle {

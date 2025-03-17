@@ -2,9 +2,11 @@
 
 
     const images = [
-        "favicon.png",
         "furro.gif",
-        "Untitled.jpg"
+        "bea.png",
+        "sonic.jpg",
+        
+
     ]
     let i = 0
 
@@ -28,17 +30,19 @@
 {/each}
   </div>
 </div>
-<style>
+<style lang="scss">
+  
   
   :root {
-        --image-size: clamp(150px, 30vw, 400px);
+        --image-width: clamp(150px, 30vw, 900px);
     }
     .gallery {
+      margin: 0 auto;
       display: flex;
       gap: 10px;
       flex-direction: column;
-      width: var(--image-size);
-      aspect-ratio: 1 / 1;
+      width: var(--image-width);
+      aspect-ratio: 16 / 9;
 
       overflow: hidden;
     }
@@ -51,8 +55,8 @@
 
   
     .slide {
-      width: var(--image-size);
-      aspect-ratio: 1 / 1;
+      width: var(--image-width);
+      aspect-ratio: 16 / 9;
       flex-shrink: 0;
     }
   
