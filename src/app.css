@@ -1,4 +1,13 @@
 /* src/app.css */
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+.lexend-header {
+    font-family: 'Lexend', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 850;
+    font-style: normal;
+}
+
+
 body {
     
    
@@ -7,4 +16,8 @@ body {
     justify-content: center;
     align-items: center;
     
+}
+h1,h2,h3 {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 600;
 }
