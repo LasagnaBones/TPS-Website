@@ -2,7 +2,6 @@
 	import '../app.css';
 	import Header from '../components/header.svelte';
 	let { children } = $props();
-    
 </script>
 
 <div class="setting">
@@ -14,7 +13,7 @@
 <footer>gaming &trade; 2025</footer>
 
 <style>
-	.setting {
+	/* .setting {
 		--checkerboard1: #c1a4da;
 		--checkerboard2: #9a77c0;
 		width: 100%;
@@ -29,6 +28,17 @@
 		background-repeat: repeat;
 		background-size: 120px 120px;
 		background-position: top left;
+	} */
+
+	.setting {
+		width: 100%;
+		height: 100%;
+		min-height: 95vh;
+		
+		background-image: url(/scenery.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
 	}
 
 	main {
