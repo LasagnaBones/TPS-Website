@@ -42,6 +42,9 @@
 		<a class="nav-item" style="--flag: {currentFlag};" on:mouseenter={changeFlag} href="/Team"
 			>Team</a
 		>
+		<a class="nav-item" style="--flag: {currentFlag};" on:mouseenter={changeFlag} href="/History"
+			>History</a
+		>
 	</nav>
 </header>
 
